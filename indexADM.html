@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock&copy; Inc.</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/639a640fc0.js" crossorigin="anonymous"></script>
+    <script src="./adm.js"></script>
+</head>
+<body style="background: white;">
+    <nav>
+        <div class="logo">
+            Clock&copy; <code style="color: #c71e81;">Inc.</code>  <code style="color: white">Adm Section</code>
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            </li>
+            <li>
+                <a style="letter-spacing: normal;" href="user.html">
+                    <i style="letter-spacing: normal;" class="fas fa-user-circle"></i>
+                </a>
+            </li>  
+            <li><a href="indexADM.html">PRODUTOS</a></li>
+            <li><a href="#">SEGURANÇA</a></li>
+            <li><a href="estoque.html">ESTOQUE</a></li>
+            <li><a href="#">CONTATOS</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Cadastro de produtos</h4>
+    <br>
+    <br>
+<form>
+    <div class="container-produtos">
+    <div class="section-1">
+        <label for="teste">Nome do produto</label>
+        <input type="text" id="Nome" autocomplete="off" placeholder="Digite o nome do produto"> 
+    </div>
+    <div class="section-2">
+        <label for="teste2">Marca do produto
+        <input type="text" id="Marca" autocomplete="off" placeholder="Digite a marca do produto">
+    </label>
+    </div>
+    <div class="select-produtos">
+        <label for="produtos para add">Quantidade de produtos
+        <input type="text" id="Quantidade" autocomplete="off" placeholder="Digite a quantidade de produtos">
+        </label>
+    </div>
+    <div class="prod-desc">
+        <label for="prod-desc">Descrição do produto</label>
+            <br>
+        <textarea id="Textarea" cols="40" rows="18" placeholder="Digite a descrição do produto"></textarea>
+    </div>
+<div class="button-config">
+    <button type="button" id="btn-success" onclick="cadastrarProduto()">Confirmar</button>
+    <button type="button" id="btn-stock" onclick="window.open('estoque.html')">Ver estoque</button>
+    <button type="button" id="btn-nothing"onclick="verEstoque()">Adicionar produtos</button>
+    <button type="reset" id="btn-warning" value="clean">Limpar</button>
+</div>
+</div>
+</form>
+</body>
+</html>
